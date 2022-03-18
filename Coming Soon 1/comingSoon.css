@@ -1,0 +1,93 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap'); */
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #F3F2EF;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-family: 'Varela Round', sans-serif;
+  padding: 2em;
+}
+.container1 h2 {
+    font-size: 6em;
+    min-width: max-content;
+    margin: 10px;
+}
+.container1 img {
+  width: 350px;
+}
+
+  .wrapper{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+  .circle{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #fcdc29;
+    border-radius: 50%;
+    animation: loading 1.5s cubic-bezier(.8, .5, .2, 1.4) infinite;
+    transform-origin: bottom center;
+    position: relative;
+  }
+  @keyframes loading{
+    0%{
+      transform: translateY(0px);
+      background-color: #fcdc29;
+    }
+    50%{
+      transform: translateY(25px);
+      background-color: #ff5951;
+    }
+    100%{
+      transform: translateY(0px);
+      background-color: #fcdc29;
+    }
+  }
+  .circle-1{
+    animation-delay: 0.1s;
+  }
+  .circle-2{
+    animation-delay: 0.2s;
+  }
+  .circle-3{
+    animation-delay: 0.3s;
+  }
+  .circle-4{
+    animation-delay: 0.4s;
+  }
+  .circle-5{
+    animation-delay: 0.5s;
+  }
+  .circle-6{
+    animation-delay: 0.6s;
+  }
+  .circle-7{
+    animation-delay: 0.7s;
+  }
+  .circle-8{
+    animation-delay: 0.8s;
+  }
+
+  @media (max-width: 991px) {
+    .container1 img {
+      width: 270px;
+    }
+    .container2 h2 {
+      font-size: calc(5em * 0.75);
+    }
+  }
+
+  @media (max-width: 575px) {
+    .container2 h2 {
+      font-size: calc(5em * 0.5);
+    }
+    .container1 img {
+      width: 220px;
+    }
+  }
